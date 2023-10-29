@@ -1,0 +1,392 @@
+.header,
+.header-up {
+  background-color: black;
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.header-up {
+  background-color: transparent;
+}
+
+.header-section-logo {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  position: relative;
+  height: 80%;
+  width: 220px;
+  cursor: pointer;
+}
+
+.header-logo div {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.header-section-logo h1,
+.header-section-logo h6 {
+  margin: 0;
+}
+
+.header-section-logo h6 {
+  padding-left: 3px;
+  color: gray;
+}
+
+.header-logo img {
+  width: 70px;
+}
+
+/* ========================================= */
+
+.header-section-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 570px);
+}
+
+.header-nav {
+  width: 602px;
+}
+
+.header-menuBar {
+  text-align: right;
+  margin-right: 13px;
+  font-size: 23px;
+}
+
+.header-menuBar:hover {
+  color: red;
+}
+
+.header-nav p {
+  display: inline-block;
+  margin: 0 12px 0 12px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px bold;
+  font-family: Montserrat, sans-serif;
+  transition: all 0.3s;
+}
+
+.header-nav a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 1180px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+/* ========================================= */
+
+.header-section-authorization {
+  display: flex;
+  align-items: center;
+  width: 320px;
+}
+
+.header-authorization {
+  display: flex;
+  flex-direction: row;
+  width: 310px;
+}
+
+.header-authorization p {
+  font-size: 23px;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.header-signUp-button,
+.header-chartBar-button,
+.header-menuBar-button {
+  padding: 10px 8px 10px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.header-menuBar-button {
+  display: none;
+}
+
+.header-signUp-button p:hover,
+.header-chartBar-button p:hover,
+.header-menuBar-button p:hover {
+  color: red;
+}
+
+.header-joinClassNow-button {
+  border: 2px solid gray;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.header-joinClassNow-button div {
+  background-color: red;
+  border-radius: 3px;
+  line-height: 1.5;
+  vertical-align: middle;
+  font-size: 25px;
+  margin: 3px;
+  width: 40px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.header-joinClassNow-button div:hover {
+  animation-name: example;
+  animation-duration: 1.2s;
+}
+
+@keyframes example {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header-joinClassNow-button p {
+  line-height: 2.5;
+  font-size: 17px;
+  margin-left: 2px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 1180px) {
+  .header-section-authorization {
+    width: 370px;
+  }
+
+  .header-authorization {
+    width: 360px;
+  }
+  .header-menuBar-button {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-section-authorization {
+    justify-content: right;
+  }
+  .header-authorization {
+    width: 150px;
+  }
+  .header-joinClassNow-button {
+    display: none;
+  }
+}
+
+/* =================================================== */
+
+.header-section-sideChart-open,
+.header-section-sideChart-close {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 395px;
+  height: 100vh;
+  color: black;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  padding: 40px 30px;
+  overflow: scroll;
+  background-color: rgb(247, 248, 248);
+  z-index: 2;
+}
+
+.header-section-sideChart-open {
+  animation-name: charOpen;
+  animation-duration: 0.5s;
+}
+
+@keyframes charOpen {
+  0% {
+    left: -400px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.header-section-sideChart-close {
+  left: -400px;
+  animation-name: chartClose;
+  animation-duration: 0.5s;
+}
+
+@keyframes chartClose {
+  100% {
+    left: -400px;
+  }
+  0% {
+    left: 0px;
+  }
+}
+
+.sideChart-head,
+.sideChart-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.sideChart-head {
+  height: 100px;
+}
+
+.sideChart-logo {
+  width: 80%;
+}
+
+.sideChart-logo-image,
+.sideChart-logo-logo {
+  position: relative;
+  width: 60px;
+  transform: translateY(-50%);
+  top: 50%;
+  color: black;
+}
+
+.sideChart-logo-image {
+  width: 60px;
+  height: 50px;
+}
+
+.sideChart-logo-image img {
+  width: 60px;
+  height: auto;
+}
+
+.sideChart-logo-logo {
+  height: 40px;
+  width: 150px;
+}
+
+.sideChart-closeButton {
+  color: red;
+  width: 100%;
+  font-size: 30px;
+  text-align: right;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sideChart-aboutUs,
+.sideChart-gallery,
+.sideChart-contactInfo,
+.sideChart-followUs {
+  margin-top: 60px;
+}
+
+.sideChart-aboutUs p {
+  font-size: 17px;
+}
+
+.sideChart-gallery ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.sideChart-gallery li {
+  list-style-type: none;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.sideChart-gallery img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.sideChart-contactInfo p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* =============================================== */
+
+.smallScreen-section-nav-open,
+.smallScreen-section-nav-clos {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  top: 0;
+  left: 0;
+  animation-name: menuBarSlideOpen;
+  animation-duration: 0.5s;
+}
+
+@keyframes menuBarSlideOpen {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes menuBarSlideClose {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0px;
+  }
+}
+.smallScreen-nav {
+  margin: 100px auto;
+  width: 20%;
+  height: 80vh;
+  text-align: center;
+}
+
+.smallScreen-nav p {
+  padding-top: 15px;
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+.smallScreen-nav a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.smallScreen-nav a:hover {
+  color: red;
+}
+
+.smallScreen-nav-close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 30px;
+  color: red;
+  cursor: pointer;
+}
