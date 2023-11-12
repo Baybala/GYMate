@@ -1,0 +1,1498 @@
+.home {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: auto;
+}
+
+.home-sec1 {
+  position: relative;
+  height: 110vh;
+  width: 100%;
+  background-image: url('../../../public/young-fitness-man-studio.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.home-sec1-share {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50px;
+  width: 50px;
+  transition: all 0.5s;
+}
+
+.home-sec1-share h3 {
+  color: white;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  transform: rotate(-90deg);
+}
+
+.home-sec1-share img {
+  width: 23px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.home-tltleInfo {
+  position: absolute;
+  top: 30%;
+  left: 150px;
+  width: 600px;
+  margin: 0px;
+  padding: 0px 20px;
+  height: auto;
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.home-findYourEnergy {
+  position: relative;
+  width: 220px;
+  text-align: center;
+  top: 45px;
+}
+
+.home-tltleInfo h1 {
+  color: white;
+  font-size: 55px;
+  font-weight: lighter;
+  transition: all 0.5s;
+}
+
+.home-tltleInfo a {
+  text-decoration: none;
+  color: black;
+}
+
+.home-ourClasses {
+  position: relative;
+  text-align: center;
+  margin-top: 80px;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.home-ourClasses::after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  top: -10px;
+  left: 10px;
+  right: -10px;
+  bottom: 10px;
+  border: 2px solid rgb(196, 193, 193);
+  width: 180px;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.home-ourClasses:hover::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .home-tltleInfo {
+    left: 20px;
+    width: 90%;
+  }
+  .home-tltleInfo h1 {
+    font-size: 40px;
+  }
+  .home-sec1-share {
+    display: none;
+  }
+}
+
+/* ================================================================================== */
+
+.home-sec2 {
+  position: relative;
+  background-image: url('../../../public/backgroundPic/sec2-backgrnd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1050px;
+  z-index: -1;
+}
+
+.home-sec2-head {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: var(--sec-width);
+  margin: auto;
+  padding: 0;
+  top: -50px;
+  right: 0;
+  left: 0;
+  height: 350px;
+}
+
+.home-sec2-head div {
+  height: inherit;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 400px;
+  background-color: white;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 2px 2px 50px rgba(51, 51, 51, 0.5);
+  cursor: pointer;
+}
+
+.home-sec2-workout {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1250px) {
+  .home-sec2-head {
+    width: 96%;
+  }
+
+  .home-sec2-head div {
+    width: 32%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-sec2 {
+    height: 1400px;
+  }
+  .home-sec2-head {
+    flex-direction: column;
+    height: 800px;
+    width: auto;
+  }
+
+  .home-sec2-head div {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+.home-sec2-head p {
+  font-size: 16px;
+}
+
+.home-sec2-head div:hover {
+  background-image: url('../../../public/images/young-beautiful-girl-athlete-bodybuilder-does-exercises-dark-background_179369-631.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: white;
+}
+
+.home-sec2-body {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 400px;
+  left: 0;
+  right: 0;
+  width: var(--sec-width);
+  height: 500px;
+  margin: auto;
+}
+
+.home-sec2-body > div {
+  height: 100%;
+}
+
+.home-sec2-body-part1 {
+  position: relative;
+  width: 600px;
+  z-index: 1;
+}
+
+.home-sec2-body-part1 > h3 {
+  position: absolute;
+  color: white;
+  top: -10px;
+  left: 40px;
+}
+
+.home-sec2-body-part1-TEM {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+}
+
+.home-sec2-body-part1-TEM div {
+  width: 33.3%;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.home-sec2-body-part1-TEM img {
+  width: 50px;
+}
+
+.home-sec2-body-part1-TEM-EQUIPMENTS {
+  margin: auto;
+  border-left: 1.5px solid rgba(128, 128, 128, 0.551);
+  border-right: 1.5px solid rgba(128, 128, 128, 0.551);
+}
+
+.home-sec2-body-part2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  margin-left: auto;
+}
+
+.home-sec2-body-part2-img1 {
+  height: 580px;
+}
+
+.home-sec2-body-part2-img2 {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 100%;
+}
+
+.home-sec2-body-part2-img3 {
+  position: absolute;
+  left: 35%;
+  z-index: -1;
+}
+
+.home-sec2-body-part2-img4 {
+  position: absolute;
+  top: 250px;
+  left: 65%;
+  width: 80px;
+}
+
+.home-sec2-body-part1-btn {
+  position: relative;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 50px;
+  background-color: rgb(46, 45, 45);
+  color: white;
+  font-weight: bold;
+}
+
+.home-sec2-body-part1-btn:hover {
+  background-color: red;
+}
+
+.home-sec2-body-part1-btn::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  right: -10px;
+  bottom: 10px;
+  border: 2px solid grey;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.home-sec2-body-part1-btn:hover:after {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 2px solid red;
+}
+
+@media only screen and (max-width: 1150px) {
+  .home-sec2-body {
+    width: 96%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-sec2-body {
+    top: 880px;
+  }
+  .home-sec2-body-part2 {
+    display: none;
+  }
+
+  .home-sec2-body-part1 {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* ==================================================================== */
+
+.home-sec3 {
+  position: relative;
+  width: var(--sec-width);
+  box-sizing: border-box;
+  height: 800px;
+  text-align: center;
+  margin: 80px auto;
+}
+
+.home-sec3 h4 {
+  position: absolute;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+}
+
+.home-sec3 img {
+  margin-top: 8px;
+  width: 250px;
+}
+
+.home-sec3-gallery-grid-container {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+}
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  transition: all 0.5s ease-in;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.grid-item-image1 {
+  background-image: url('../../../public/pictures/cycling.jpg');
+}
+
+.grid-item-image2 {
+  background-image: url('../../../public/pictures/karate.jpg');
+}
+
+.grid-item-image3 {
+  background-image: url('../../../public/pictures/power.jpg');
+}
+
+.grid-item-image4 {
+  background-image: url('../../../public/pictures/meditation.jpg');
+}
+
+.grid-item-image5 {
+  background-image: url('../../../public/pictures/martialArts.jpg');
+}
+
+.grid-item-image6 {
+  background-image: url('../../../public/pictures/workout.jpg');
+}
+
+.image:hover {
+  scale: 1.3;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.item:hover .sideBadge {
+  background-color: white;
+  color: red;
+}
+
+.item {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.item h1,
+.item p {
+  position: absolute;
+  top: 170px;
+  left: 30px;
+  color: white;
+}
+
+.item p {
+  top: 220px;
+  background-color: red;
+  padding: 5px;
+}
+
+.grid-item1 {
+  grid-column: 1 / 3;
+}
+
+.grid-item6 {
+  grid-column: 3 / 5;
+}
+
+.sideBadge {
+  position: absolute;
+  top: 60px;
+  left: -60px;
+  background-color: rgba(255, 255, 255, 0.515);
+  width: 150px;
+  height: 60px;
+  border-radius: 30px;
+  transform: rotate(20deg);
+}
+
+.sideBadge-icon {
+  position: absolute;
+  scale: 1.5;
+  top: 20px;
+  right: 30px;
+  transform: rotate(-20deg);
+}
+
+@media only screen and (max-width: 1250px) {
+  .home-sec3 {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-sec3-gallery-grid-container {
+    grid-template-columns: 100%;
+  }
+
+  .grid-item1 {
+    grid-column: 1;
+  }
+
+  .grid-item6 {
+    grid-column: 1;
+  }
+}
+
+/* ================================================================================== */
+
+.home-sec4 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 1050px;
+}
+
+.home-sec4-head {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 270px;
+  background-image: url('../../../public/pictures/redLine.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  z-index: 1;
+}
+
+.home-sec4-head h1 {
+  display: inline-block;
+  font-size: 35px;
+  width: 550px;
+  color: white;
+}
+
+.home-sec4-head > p {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin-right: 28%;
+  line-height: 50px;
+  margin-left: 10%;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.home-sec4-head > p::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  right: -10px;
+  bottom: 10px;
+  border: 1px solid rgb(180, 173, 173);
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.home-sec4-head > p:hover::before {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .home-sec4-head {
+    background-size: 1250px;
+  }
+  .home-sec4-head p {
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-sec4-head {
+    background-image: none;
+    background-color: rgb(247, 54, 54);
+    display: inline-block;
+    text-align: center;
+    height: 210px;
+  }
+
+  .home-sec4-head h1 {
+    font-size: 30px;
+  }
+
+  .home-sec4-head p {
+    margin: auto;
+  }
+}
+
+.home-sec4-body {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 80px;
+  position: absolute;
+  justify-content: center;
+  top: 210px;
+  left: 0;
+  right: 0;
+  background-image: url('../../../public/pictures/BGimage_sec4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 700px;
+  padding-top: 120px;
+}
+
+.home-sec4-body-video {
+  position: relative;
+  text-align: center;
+  height: 680px;
+}
+
+.home-sec4-body-video img {
+  width: 95%;
+}
+
+.home-sec4-body-video::before {
+  content: '';
+  position: absolute;
+  left: -2%;
+  top: 40%;
+  background-color: red;
+  height: 50%;
+  width: 10px;
+}
+
+.home-sec4-body-video::after {
+  content: '';
+  position: absolute;
+  right: 3%;
+  top: 50px;
+  transform: rotate(-6deg);
+  background-color: red;
+  height: 70%;
+  width: 10px;
+}
+
+.home-sec4-body-WhyChooseUS {
+  position: relative;
+  padding-right: 40%;
+  z-index: 1;
+}
+
+.home-sec4-body-WhyChooseUS > img {
+  position: absolute;
+  left: -40px;
+}
+
+.home-sec4-body-WhyChooseUS > h4 {
+  position: absolute;
+  top: -10px;
+  color: white;
+  z-index: 1;
+}
+
+.home-sec4-body-WhyChooseUS > h1 {
+  width: 400px;
+  color: white;
+  margin: 80px 0 50px 0;
+}
+
+.home-sec4-body-inforText {
+  width: 500px;
+  font-size: 18px;
+  color: rgb(141, 136, 136);
+  margin-bottom: 50px;
+}
+
+.home-sec4-body-info {
+  display: grid;
+  grid-template-columns: 230px 230px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.home-sec4-body-info > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-sec4-body-info > div div {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 5px 0;
+  border-radius: 40px;
+  background-color: rgb(49, 48, 48);
+  transition: all 0.5s;
+}
+
+.home-sec4-body-info > div div:hover {
+  background-color: red;
+}
+
+.home-sec4-body-info > div div > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+}
+
+.home-sec4-body-info > div > h3 {
+  width: 60%;
+  margin-left: 15px;
+
+  color: white;
+}
+
+.home-sec4-btn {
+  position: relative;
+  background-color: grey;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 50px;
+  transition: all 0.3s;
+  color: white;
+}
+
+.home-sec4-btn::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  right: -10px;
+  top: -10px;
+  bottom: 10px;
+  border: 1px solid rgb(124, 120, 120);
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.home-sec4-btn:hover {
+  background-color: rgb(240, 57, 57);
+}
+
+.home-sec4-btn:hover::before {
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border: 1px solid red;
+}
+
+@media only screen and (max-width: 1000px) {
+  .home-sec4 {
+    height: 1750px;
+  }
+  .home-sec4-body {
+    height: 1400px;
+  }
+
+  .home-sec4-body {
+    grid-template-columns: 75%;
+    row-gap: 20px;
+  }
+
+  .home-sec4-body-video {
+    display: flex;
+    align-items: center;
+  }
+
+  .home-sec4-body-WhyChooseUS {
+    padding: 0;
+  }
+
+  .home-sec4-body-WhyChooseUS > img,
+  .home-sec4-body-WhyChooseUS > h4 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-sec4-body-WhyChooseUS > h1,
+  .home-sec4-body-inforText {
+    text-align: center;
+    width: 100%;
+  }
+
+  .home-sec4-body-info {
+    justify-content: center;
+  }
+
+  .home-sec4-btn {
+    margin: 50px auto;
+  }
+}
+
+/* ================================================================================================================= */
+
+.head-sec5 {
+  position: relative;
+  padding-top: 70px;
+  margin: 0;
+  width: 100%;
+  height: 700px;
+  background-image: url('../../../public/pictures/BG2.png');
+  text-align: center;
+}
+
+@media only screen and (max-width: 1185px) {
+  .head-sec5 {
+    height: 1200px;
+  }
+}
+
+@media only screen and (max-width: 795px) {
+  .head-sec5 {
+    height: 1650px;
+  }
+}
+
+.head-sec5-headText_gymTrainers {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.head-sec5-paragraphText {
+  padding: 0 35%;
+}
+
+.head-sec5-coaches {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.head-sec5-coaches > div {
+  width: 350px;
+  height: 430px;
+  margin: 20px;
+}
+
+.head-sec5-coacheImage {
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+  background-image: url('../../../public/pictures/BG1.png');
+  cursor: pointer;
+}
+
+.head-sec5-coacheImage img {
+  width: 220px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.head-sec5-coacheImage:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.head-sec5-coacheInfo {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  height: 35%;
+  box-shadow: 1px 5px 30px rgba(128, 128, 128, 0.234);
+}
+
+.head-sec5-coacheInfo::before {
+  content: url('../../../public/pictures/BG3.png');
+  position: absolute;
+  top: -27px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.head-sec5-coacheInfo::after {
+  content: '';
+  position: absolute;
+  top: 97%;
+  left: 42%;
+  right: 42%;
+  bottom: 0;
+  background-color: rgb(241, 61, 61);
+  transition: all 0.4s;
+}
+
+.head-sec5-coacheInfo:hover::after {
+  left: 0;
+  right: 0;
+}
+
+/* =========================================================================================================== */
+
+.head-sec6 {
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  height: 800px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.393);
+}
+
+.head-sec6-headText_testimonal {
+  position: absolute;
+  color: white;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.head-sec6 > div {
+  position: absolute;
+  top: 140px;
+  right: 50%;
+  transform: translateX(50%);
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.head-sec6-body-frame {
+  position: relative;
+  height: 400px;
+  border: 10px solid rgba(128, 128, 128, 0.177);
+}
+
+.head-sec6-body-frame > img {
+  position: absolute;
+  width: 400px;
+  bottom: 30px;
+  left: 30px;
+  border-top-right-radius: 200px;
+  z-index: 1;
+}
+
+.head-sec6-body-mainInfo {
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  background-color: black;
+}
+
+.head-sec6-body-mainInfo > * {
+  position: absolute;
+  text-align: left;
+  left: 43%;
+}
+
+.head-sec6-body-mainInfo > img {
+  width: 70px;
+  margin-top: 50px;
+}
+
+.head-sec6-body-mainInfo > p {
+  top: 130px;
+  color: rgb(181, 176, 176);
+}
+
+.head-sec6-body-mainInfo > h3 {
+  top: 220px;
+  color: white;
+}
+
+.head-sec6-body-mainInfo > h5 {
+  top: 250px;
+  color: rgb(181, 176, 176);
+}
+
+.head-sec6-body-mainInfo > div {
+  left: auto;
+  right: 15px;
+  top: 270px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  text-align: center;
+}
+
+.head-sec6-body-mainInfo > div > div {
+  background-color: white;
+  width: 50px;
+  padding: 12px 0;
+  transition: all 0.4s;
+}
+
+.head-sec6-body-mainInfo > div > div:hover {
+  background-color: red;
+  color: white;
+}
+
+.head-sec6-body-partners {
+  position: absolute;
+  top: 480px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.head-sec6-body-partners img {
+  width: 170px;
+  margin: 0 auto;
+  background-color: white;
+  filter: opacity(50%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.head-sec6-body-partners img:hover {
+  filter: opacity(100%);
+}
+
+@media only screen and (max-width: 545px) {
+  .head-sec6 {
+    height: 900px;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .head-sec6-body-frame > img {
+    display: none;
+  }
+
+  .head-sec6-body-mainInfo > * {
+    left: 0;
+    padding: 0 40px;
+  }
+
+  .head-sec6-body-mainInfo > h3 {
+    top: 230px;
+  }
+
+  .head-sec6-body-mainInfo > h5 {
+    top: 260px;
+  }
+}
+
+/* =========================================================================================================== */
+
+.home-sec7 {
+  position: relative;
+  text-align: center;
+  margin-top: 120px;
+  width: 100%;
+  height: 800px;
+  background-image: url('../../../public/pictures/sec7BG1.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.head-sec7-headText_galery {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+}
+
+.home-sec7 > p {
+  margin: auto;
+  width: 60%;
+  color: rgb(59, 58, 58);
+}
+
+.head-sec7-galery-container {
+  position: absolute;
+  top: 200px;
+  right: 50%;
+  transform: translateX(50%);
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  gap: 5px;
+}
+
+.head-sec7-galery-container > div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image1 {
+  grid-column: span 2;
+  grid-row: 1 / span 2;
+  background-image: url('../../../public/pictures/GalleryBG1.jpg');
+  height: 380px;
+}
+
+.image2 {
+  background-image: url('../../../public/pictures/GalleryBG2.jpg');
+  height: 190px;
+  grid-column: span 2;
+  grid-row: 1;
+}
+
+.image3 {
+  height: 190px;
+  background-image: url('../../../public/pictures/GalleryBG3.jpeg');
+  grid-row: 3;
+}
+
+.image4 {
+  background-image: url('../../../public/pictures/GalleryBG4.jpeg');
+  grid-row: 3;
+}
+
+.image5 {
+  background-image: url('../../../public/pictures/GalleryBG5.jpeg');
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* =========================================================================================================== */
+
+.home-sec8 {
+  position: relative;
+  margin-top: 120px;
+  background-color: black;
+  height: 400px;
+}
+
+.home-sec8-imageBG {
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  background-image: url('../../../public/pictures/Pic2.jpg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 150%;
+  box-shadow: 50px 0px 40px black inset;
+}
+
+.home-sec8-BMI {
+  position: absolute;
+  max-width: 1100px;
+  width: 86%;
+  height: 90%;
+  top: 40px;
+  right: 12%;
+  padding-left: 30px;
+}
+
+.home-sec8-BMI > h1 {
+  color: white;
+}
+
+.home-sec8-text {
+  color: rgba(255, 255, 255, 0.579);
+  width: 400px;
+}
+
+#weight,
+#height,
+.BMI,
+.weight {
+  background-color: black;
+  height: 50px;
+  width: 25%;
+  margin-top: 25px;
+  margin-right: 30px;
+  border: 2px solid grey;
+  padding: 0 10px;
+  color: white;
+}
+
+.BMI,
+.weight {
+  display: inline-block;
+  border: none;
+  padding: 0 15px 0 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.btn-calculate {
+  display: block;
+  width: 150px;
+  height: 45px;
+  background-color: rgb(77, 75, 75);
+  margin-top: -14px;
+}
+
+.btn-calculate:hover {
+  background-color: red;
+}
+
+@media only screen and (max-width: 900px) {
+  .home-sec8-BMI {
+    right: 0px;
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #weight,
+  #height,
+  .BMI,
+  .weight {
+    width: 38%;
+  }
+}
+
+/* =========================================================================================================== */
+
+.home-sec9 {
+  position: relative;
+  text-align: center;
+  padding-top: 100px;
+  width: 100%;
+  height: 1000px;
+  background-image: url('../../../public/backgroundPic/sec2-backgrnd.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.home-sec9 > p {
+  padding: 0 25px;
+}
+
+.home-sec9::before {
+  position: absolute;
+  left: 20px;
+  content: url('../../../public/pictures/Sec9BG1.png');
+  z-index: -1;
+}
+
+.home-sec9::after {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  content: url('../../../public/pictures/Sec9BG2.png');
+  z-index: -1;
+}
+
+.home-sec9-headText_pricing {
+  position: absolute;
+  color: white;
+  top: 88px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home-sec9-priceBoxes {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 25px;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 50px;
+  max-width: var(--sec-width);
+  width: 100%;
+  height: 700px;
+}
+
+@media only screen and (max-width: 900px) {
+  .home-sec9 {
+    height: 2500px;
+  }
+
+  .home-sec9-priceBoxes {
+    grid-template-columns: auto;
+    width: 400px;
+    row-gap: 25px;
+    height: 2200px;
+  }
+
+  .home-sec9-priceBoxes > div {
+    height: 700px;
+  }
+}
+
+.home-sec9-priceBoxes > div {
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.36);
+  height: 100%;
+}
+
+.home-sec9-imageBox {
+  position: relative;
+  width: 100%;
+  height: 34%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.home-sec9-imageBox:hover,
+.home-sec9-imageBox:hover .home-sec9-imageBox::after {
+  color: red;
+  filter: grayscale(0%);
+}
+
+.box1 {
+  background-image: url('../../../public/pictures/Sec10Pic3.jpeg');
+}
+.box2 {
+  background-image: url('../../../public/pictures/Sec10Pic2.jpeg');
+}
+.box3 {
+  background-image: url('../../../public/pictures/Sec10Pic1.jpeg');
+}
+
+.home-sec9-imageBox::after {
+  content: 'Beginners';
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  height: 50px;
+  width: 200px;
+  line-height: 62px;
+  font-size: 22px;
+  font-weight: bolder;
+  background-color: white;
+}
+
+.home-sec9-price {
+  position: relative;
+  font-size: 65px;
+  margin: 30px 0 0 0;
+}
+
+.home-sec9-price::before {
+  content: '$';
+  position: absolute;
+  color: grey;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-75px);
+  font-size: 42px;
+}
+
+.home-sec9-price::after {
+  content: 'p/m';
+  position: absolute;
+  color: grey;
+  left: 50%;
+  bottom: 10px;
+  font-size: 35px;
+  transform: translateX(55px);
+}
+
+.home-sec9-p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: grey;
+}
+
+.home-sec9-btn {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  background-color: rgb(213, 26, 26);
+  color: white;
+  margin: 40px auto;
+}
+
+.home-sec9-btn::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: 10px;
+  left: 10px;
+  border: 1px solid rgb(215, 29, 29);
+  transition: all 0.4s;
+}
+
+.home-sec9-btn:hover::before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* =========================================================================================================== */
+
+.home-sec10 {
+  position: relative;
+  text-align: center;
+  margin-top: 80px;
+  width: 100%;
+  height: 700px;
+}
+
+.home-sec10-headText_blog {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.home-sec10-blogBoxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 50px auto;
+  width: 100%;
+  height: 400px;
+}
+
+.home-sec10-blogBoxes > div {
+  text-align: left;
+  margin: 0 20px;
+  width: 350px;
+  padding: 20px;
+  box-shadow: 0px 20px 20px 0px rgba(128, 128, 128, 0.185);
+}
+
+.home-sec10-blogBoxes > div > h4 {
+  width: 120px;
+  height: 30px;
+  margin-bottom: 45px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.home-sec10-blogBoxes > div > h2 {
+  width: 300px;
+}
+
+.home-sec10-infoText {
+  width: 300px;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.home-sec10-btn {
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1307px) {
+  .home-sec10 {
+    height: 1000px;
+  }
+}
+
+@media only screen and (max-width: 876px) {
+  .home-sec10 {
+    height: 1400px;
+  }
+}
+
+/* =========================================================================================================== */
+
+.home-sec11 {
+  height: 300px;
+  background-image: url('../../../public/pictures/Sec11BG1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 60%;
+}
+
+.home-sec11 > div {
+  padding-left: 30px;
+  max-width: 1200px;
+  width: 90%;
+  margin-right: 10%;
+  z-index: 1;
+}
+
+.home-sec11-btn {
+  position: relative;
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.home-sec11-btn::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  bottom: 10px;
+  right: -10px;
+  z-index: -1;
+  border: 1px solid red;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+
+.home-sec11-btn:hover::before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+}

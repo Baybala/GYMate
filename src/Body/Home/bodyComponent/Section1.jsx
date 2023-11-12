@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Section1 = () => {
   return (
-    <div className="home-sec1">
+    <section className="home-sec1">
       <div className="home-sec1-share">
         <h3>SHARE</h3>
         <img src="./icon/facebook.png" alt="facebook icon" />
@@ -29,7 +29,7 @@ const Section1 = () => {
           </p>
         </Link>
       </div>
-    </div>
+    </section>
   )
 }
 

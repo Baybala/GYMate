@@ -1,0 +1,94 @@
+.footer {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  /* z-index: -1; */
+}
+
+.footer-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 40% auto auto;
+  column-gap: 20px;
+  row-gap: 20px;
+  max-width: var(--sec-width);
+  margin: auto;
+  padding: 100px 30px;
+  /* background-color: aqua; */
+}
+
+.grid {
+  /* background-color: yellow; */
+  height: 100%;
+  /* margin: 20px; */
+}
+
+.grid1 > p {
+  width: 90%;
+  color: rgb(78, 76, 76);
+}
+
+.footer-socialMedia {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  width: 120px;
+  overflow: hidden;
+}
+
+.footer-socialMedia img {
+  cursor: pointer;
+}
+
+.grid2 > p,
+.grid3 > p {
+  margin: 25px 0;
+  color: rgb(78, 76, 76);
+}
+
+.grid2 > h2 {
+  position: relative;
+  margin: 0;
+  width: auto;
+}
+
+.grid2 > p {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.grid2 > p:hover {
+  color: red;
+  font-weight: bolder;
+}
+
+.grid3 > h2 {
+  position: relative;
+  margin: 0;
+}
+
+.grid2 > h2::after,
+.grid3 > h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 4px;
+  width: 80px;
+  background-color: red;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 400px;
+    max-width: 400px;
+    row-gap: 40px;
+    /* widows: 400px; */
+  }
+}
