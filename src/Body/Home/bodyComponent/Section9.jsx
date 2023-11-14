@@ -29,20 +29,22 @@ const Section9 = () => {
     )
   }
   return (
-    <div className="home-sec9">
-      <img src="./titlebx.svg" alt="titlebx" />
-      <h4 className="home-sec9-headText_pricing">GYMATE GALLERY</h4>
-      <h1>Exclusive Pricing Plan</h1>
-      <p>
-        Gymat an unknown printer took a galley of type and scrambled make a type
-        specimen book.
-      </p>
-      <div className="home-sec9-priceBoxes">
-        {boxContent(39, 'box1')}
-        {boxContent(65, 'box2')}
-        {boxContent(100, 'box3')}
+    <section className="home-sec9">
+      <div className="home-sec9-container">
+        <img src="./titlebx.svg" alt="titlebx" />
+        <h4 className="home-sec9-headText_pricing">GYMATE GALLERY</h4>
+        <h1>Exclusive Pricing Plan</h1>
+        <p>
+          Gymat an unknown printer took a galley of type and scrambled make a
+          type specimen book.
+        </p>
+        <div className="home-sec9-priceBoxes">
+          {boxContent(39, 'box1')}
+          {boxContent(65, 'box2')}
+          {boxContent(100, 'box3')}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

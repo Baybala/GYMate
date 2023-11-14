@@ -3,8 +3,8 @@ import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 
 const Section11 = () => {
   return (
-    <div className="home-sec11">
-      <div>
+    <section className="home-sec11">
+      <div className="home-sec11-container">
         <h1>
           <b>Need a Fitness Trainer?</b>
         </h1>
@@ -23,7 +23,7 @@ const Section11 = () => {
           </b>
         </p>
       </div>
-    </div>
+    </section>
   )
 }
 

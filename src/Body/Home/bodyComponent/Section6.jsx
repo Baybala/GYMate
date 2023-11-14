@@ -4,15 +4,15 @@ import {
   faArrowRightLong,
 } from '@fortawesome/free-solid-svg-icons'
 
-const Section4 = () => {
+const Section6 = () => {
   return (
-    <div className="head-sec6">
-      <img src="./titlebx.svg" alt="titlebx" />
-      <h4 className="head-sec6-headText_testimonal">TESTIMONIALS</h4>
-      <div>
-        <div className="head-sec6-body-frame">
+    <section className="home-sec6">
+      <div className="home-sec6-container">
+        <img src="./titlebx.svg" alt="titlebx" />
+        <h4 className="home-sec6-headText_testimonal">TESTIMONIALS</h4>
+        <div className="home-sec6-body-frame">
           <img src="./pictures/TestimonialBG1.jpg" alt="spotGirl" />
-          <div className="head-sec6-body-mainInfo">
+          <div className="home-sec6-body-mainInfo">
             <img src="./pictures/TestimonialBG2.png" alt="quotationMark" />
             <p>
               “I've been a member of Gymate for the past 6 months and it has
@@ -31,7 +31,7 @@ const Section4 = () => {
               </div>
             </div>
           </div>
-          <div className="head-sec6-body-partners">
+          <div className="home-sec6-body-partners">
             <img src="./pictures/TestimonialBG4.png" alt="part1" />
             <img src="./pictures/TestimonialBG5.png" alt="part2" />
             <img src="./pictures/TestimonialBG6.png" alt="part3" />
@@ -40,8 +40,8 @@ const Section4 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default Section4
+export default Section6

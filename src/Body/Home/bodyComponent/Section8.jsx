@@ -35,9 +35,8 @@ const Section8 = () => {
   }
 
   return (
-    <div className="home-sec8">
-      <div className="home-sec8-imageBG"></div>
-      <div className="home-sec8-BMI">
+    <section className="home-sec8">
+      <div className="home-sec8-container">
         <h1>
           <b>
             Let's Calculate Your <span style={{ color: 'red' }}>BMI</span>
@@ -79,7 +78,7 @@ const Section8 = () => {
           </button>
         </form>
       </div>
-    </div>
+    </section>
   )
 }
 

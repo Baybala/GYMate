@@ -10,10 +10,17 @@ import Section9 from './bodyComponent/Section9'
 import Section10 from './bodyComponent/Section10'
 import Section11 from './bodyComponent/Section11'
 import './Home.css'
+import { useEffect } from 'react'
 
 const Body = () => {
+  useEffect(() => {
+    const element = document.getElementById('home')
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
+  })
   return (
-    <div className="home">
+    <div className="home" id="home">
       <Section1 />
       <Section2 />
       <Section3 />

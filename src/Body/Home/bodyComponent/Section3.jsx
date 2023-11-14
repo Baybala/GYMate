@@ -9,8 +9,8 @@ import {
 const Section3 = () => {
   //   const galleryData = [{className: }]
   return (
-    <div className="home-sec3">
-      <div>
+    <section className="home-sec3">
+      <div className="home-sec3-container">
         <h4>
           <b>OUR FEATURED CLASS</b>
         </h4>
@@ -84,7 +84,7 @@ const Section3 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
