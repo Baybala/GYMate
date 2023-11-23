@@ -19,7 +19,7 @@ const Section1 = () => {
           <br />
           FIT & PERFECT
         </h1>
-        <Link to="classes">
+        <Link to="/Classes">
           <p className="home-ourClasses">
             <b>OUR CLASSE</b>
             <FontAwesomeIcon

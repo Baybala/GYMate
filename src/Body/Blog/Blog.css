@@ -1,5 +1,263 @@
 .blog {
+  position: relative;
   width: 100%;
+  height: auto;
+}
+
+.blog-container {
+  position: relative;
+  max-width: var(--sec-width);
+  height: auto;
+  margin: 0px auto;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 55% 35%;
+  gap: 50px;
+  justify-content: center;
+  z-index: 1;
+}
+
+.blog-header {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .blog-container {
+    grid-template-columns: 90%;
+  }
+}
+
+.blog-left-column {
+  height: auto;
+}
+
+.bgPicture {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blog-left-column > p {
+  color: gray;
+  font-size: 14px;
+}
+
+.purchaseButton {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: red;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.purchaseButton::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  right: -10px;
+  bottom: 10px;
+  border: 1px solid red;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.purchaseButton:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.blog-right-column {
+  margin: 0;
+}
+
+.search-container {
+  display: flex;
+}
+
+.searchField input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  border: 1px solid grey;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  margin: 0 160px 0 0;
+}
+
+.searchField input:focus {
+  outline: none !important;
+}
+
+.searchButton {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 24px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.catigories-container,
+.posts-container,
+.popularTags-container,
+.discount-container {
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px 0 35px;
+  height: auto;
+  background-color: rgba(206, 204, 204, 0.215);
+}
+
+.catigories-container > h3,
+.posts-container > h3,
+.popularTags-container > h3 {
+  position: relative;
+  margin-left: 20px;
+}
+
+.catigories-container > h3::after,
+.posts-container > h3::after,
+.popularTags-container > h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 50px;
+  height: 5px;
+  background-color: red;
+}
+
+.catigories-item {
+  display: grid;
+  margin: 0 20px;
+  gap: 10px;
+  grid-template-columns: auto 85% auto;
+  cursor: pointer;
+}
+
+.catigories-item:hover > p {
+  color: red;
+}
+
+.catigories-item {
+  border-bottom: 1px solid gray;
+}
+
+.catigories-item > p {
+  color: grey;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 120px auto;
+  margin: 0 20px;
+  padding-top: 15px;
+}
+
+.post-img {
+  width: 120px;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.post {
+  width: auto;
+  margin: 0;
+  padding: 20px;
+}
+
+.post h5 {
+  margin: 0;
+  color: gray;
+}
+
+.post h3 {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.post h3:hover {
+  color: red;
+}
+
+.tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 20px 0;
+}
+
+.tag > p {
+  color: rgb(76, 75, 75);
+  width: auto;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 5px 5px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.tag > p:hover {
+  color: red;
+}
+
+.discount-container {
+  padding: 0;
+}
+
+.discount-container > div {
+  position: relative;
   height: 600px;
-  background-color: yellow;
+  background-image: url('../../../public/pictures/Picture19.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.discount-container > div::before {
+  content: '';
+  position: absolute;
+  top: 70px;
+  height: 60px;
+  width: 180px;
+  transform: translateX(-30px) skewX(-30deg);
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: white;
+}
+
+.discount-container > div > h1 {
+  position: absolute;
+  top: 62px;
+  left: 20px;
+}
+
+.discount-container > div > p {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
 }

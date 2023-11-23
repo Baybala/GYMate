@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const Section2 = () => {
   return (
@@ -66,13 +67,15 @@ const Section2 = () => {
                 </h3>
               </div>
             </div>
-            <p className="home-sec2-body-part1-btn">
-              TAKE A TOUR
-              <FontAwesomeIcon
-                style={{ paddingLeft: '8px' }}
-                icon={faArrowRightLong}
-              />
-            </p>
+            <Link to="/Classes" style={{ textDecoration: 'none' }}>
+              <p className="home-sec2-body-part1-btn">
+                TAKE A TOUR
+                <FontAwesomeIcon
+                  style={{ paddingLeft: '8px' }}
+                  icon={faArrowRightLong}
+                />
+              </p>
+            </Link>
           </div>
           <div className="home-sec2-body-part2">
             <img

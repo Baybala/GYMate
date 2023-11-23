@@ -10,6 +10,7 @@ import Blog from './Body/Blog/Blog'
 import Pricing from './Body/Pricing/Pricing'
 import Classes from './Body/Classes/Classes'
 import Contact from './Body/Contact/Contact'
+import BodyheaderLayout from './Body/BodyHeaderLayout'
 
 function App() {
   return (
@@ -17,13 +18,15 @@ function App() {
       <Header />
       <Routes>
         <Route path="/home" element={<Body />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/pricing" element={<Pricing />} />
-        <Route path="/classes" element={<Classes />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" element={<BodyheaderLayout />}>
+          <Route path="about" element={<About />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="schedule" element={<Schedule />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="pricing" element={<Pricing />} />
+          <Route path="classes" element={<Classes />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
       </Routes>
       <Footer />
     </div>

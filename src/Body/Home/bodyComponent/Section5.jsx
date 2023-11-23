@@ -45,8 +45,6 @@ const Section4 = () => {
               <p>Personal Trainer</p>
             </div>
           </div>
-          <div></div>
-          <div></div>
         </div>
       </div>
     </section>

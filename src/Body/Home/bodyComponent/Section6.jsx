@@ -22,7 +22,7 @@ const Section6 = () => {
             </p>
             <h3>Harry Potter</h3>
             <h5>CEO of Hogwarts</h5>
-            <div>
+            <div className="home-sec6-body-mainInfo-arrow">
               <div>
                 <FontAwesomeIcon icon={faArrowLeftLong} />
               </div>

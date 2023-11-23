@@ -9,8 +9,8 @@ import Section8 from './bodyComponent/Section8'
 import Section9 from './bodyComponent/Section9'
 import Section10 from './bodyComponent/Section10'
 import Section11 from './bodyComponent/Section11'
-import './Home.css'
 import { useEffect } from 'react'
+import './Home.css'
 
 const Body = () => {
   useEffect(() => {

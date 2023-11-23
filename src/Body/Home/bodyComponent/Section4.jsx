@@ -1,25 +1,29 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const Section4 = () => {
   return (
     <section className="home-sec4">
       <div className="home-sec4-head">
-        <h1>
-          <b>
-            We Are Always Providing Best
-            <br />
-            Fitness Service For You
-          </b>
-        </h1>
-
-        <p className="home-sec4-head-btn">
-          TAKE A TOUR
-          <FontAwesomeIcon
-            style={{ paddingLeft: '8px' }}
-            icon={faArrowRightLong}
-          />
-        </p>
+        <div>
+          <h1>
+            <b>
+              We Are Always Providing Best
+              <br />
+              Fitness Service For You
+            </b>
+          </h1>
+          <Link to="/Contact" style={{ textDecoration: 'none' }}>
+            <p className="home-sec4-head-btn">
+              TAKE A TOUR
+              <FontAwesomeIcon
+                style={{ paddingLeft: '8px' }}
+                icon={faArrowRightLong}
+              />
+            </p>
+          </Link>
+        </div>
       </div>
       <div className="home-sec4-container">
         <div className="home-sec4-body">
@@ -64,13 +68,15 @@ const Section4 = () => {
                 <h3>Fresh Bottle Watter</h3>
               </div>
             </div>
-            <p className="home-sec4-btn">
-              OUR CLASSES
-              <FontAwesomeIcon
-                style={{ paddingLeft: '8px' }}
-                icon={faArrowRightLong}
-              />
-            </p>
+            <Link to="/Classes" style={{ textDecoration: 'none' }}>
+              <p className="home-sec4-btn">
+                OUR CLASSES
+                <FontAwesomeIcon
+                  style={{ paddingLeft: '8px' }}
+                  icon={faArrowRightLong}
+                />
+              </p>
+            </Link>
           </div>
         </div>
       </div>

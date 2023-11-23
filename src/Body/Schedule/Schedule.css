@@ -1,5 +1,121 @@
 .schedule {
   width: 100%;
-  height: 600px;
-  background-color: bisque;
+  height: auto;
+}
+
+.classes-conatiner {
+  position: relative;
+  max-width: var(--sec-width);
+  height: auto;
+  margin: 0px auto;
+}
+
+.classes-conatiner > h1 {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.headButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 0;
+  column-gap: 20px;
+}
+
+.navButton {
+  width: auto;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.navButton:hover {
+  background-color: red;
+  border: 1px solid red;
+}
+
+.active {
+  background-color: red;
+}
+
+.item-container {
+  background-color: rgba(200, 197, 197, 0.323);
+  margin: 5px 20px;
+  display: grid;
+  padding: 35px 0;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.item-container h5 {
+  color: gray;
+
+  margin: 0;
+}
+
+.class {
+  margin-left: 50px;
+}
+
+.class p,
+.time p,
+.trainer p {
+  font-size: 20px;
+  margin: 8px 0 0;
+}
+
+.time {
+  text-align: center;
+}
+
+.trainer {
+  text-align: center;
+}
+
+.join {
+  text-align: end;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.join > p {
+  background-color: gray;
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.join > p:hover {
+  background-color: red;
+}
+
+@media only screen and (max-width: 800px) {
+  .item-container {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  .class {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .time,
+  .trainer {
+    margin-bottom: 20px;
+  }
+
+  .join {
+    justify-content: center;
+    margin-right: 0px;
+  }
 }

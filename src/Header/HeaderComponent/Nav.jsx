@@ -8,7 +8,7 @@ const Nav = ({ navPath }) => {
         {navPath.map((item) => {
           return (
             <p key={item}>
-              <Link to={item}>{item}</Link>
+              <Link to={`/${item}`}>{item}</Link>
             </p>
           )
         })}

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const Section10 = () => {
   const blogBox = (h4Text, h2Text, pText) => {
@@ -8,15 +9,17 @@ const Section10 = () => {
         <h4>{h4Text}</h4>
         <h2>{h2Text}</h2>
         <p className="home-sec10-infoText">{pText}</p>
-        <p className="home-sec10-btn">
-          <b>
-            TAKE A TOUR
-            <FontAwesomeIcon
-              style={{ paddingLeft: '8px' }}
-              icon={faArrowRightLong}
-            />
-          </b>
-        </p>
+        <Link to="/Blog" style={{ textDecoration: 'none' }}>
+          <p className="home-sec10-btn">
+            <b>
+              TAKE A TOUR
+              <FontAwesomeIcon
+                style={{ paddingLeft: '8px' }}
+                icon={faArrowRightLong}
+              />
+            </b>
+          </p>
+        </Link>
       </div>
     )
   }

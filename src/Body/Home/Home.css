@@ -45,7 +45,7 @@
   position: absolute;
   top: 30%;
   left: 150px;
-  width: 600px;
+  width: 550px;
   margin: 0px;
   padding: 0px 20px;
   height: auto;
@@ -139,7 +139,7 @@
 /* ================================================================================== */
 
 .home-sec2 {
-  background-image: url('../../../public/backgroundPic/sec2-backgrnd.jpg');
+  background-image: url('../../../public/backgroundPic/BG1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 1050px;
@@ -257,6 +257,7 @@
 .home-sec2-body-part2 {
   position: relative;
   margin-left: 20px;
+  z-index: 1;
 }
 
 .home-sec2-body-part2-img1 {
@@ -406,6 +407,7 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
+  cursor: pointer;
   transition: all 0.5s ease-in;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -494,6 +496,9 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .home-sec3 {
+    height: 2150px;
+  }
   .home-sec3-gallery-grid-container {
     grid-template-columns: 100%;
   }
@@ -518,17 +523,17 @@
   background-image: url('../../../public/pictures/BGimage_sec4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
 }
 
 .home-sec4-head {
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: right;
+  /* justify-content: right; */
   right: 0;
   left: 0;
-  top: -20px;
+  top: -40px;
   height: 270px;
   background-image: url('../../../public/pictures/redLine.png');
   background-repeat: no-repeat;
@@ -537,26 +542,32 @@
   z-index: 1;
 }
 
+.home-sec4-head > div {
+  position: absolute;
+  right: 10%;
+  max-width: var(--sec-width);
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 .home-sec4-head h1 {
-  display: inline-block;
+  margin: 0;
   font-size: 35px;
-  width: 550px;
   color: white;
 }
 
-.home-sec4-head > p {
+.home-sec4-head p {
   position: relative;
   width: 200px;
   height: 50px;
-  margin-right: 28%;
   line-height: 50px;
-  margin-left: 10%;
   text-align: center;
   background-color: white;
   cursor: pointer;
 }
 
-.home-sec4-head > p::before {
+.home-sec4-head p::before {
   content: '';
   position: absolute;
   top: -10px;
@@ -568,7 +579,7 @@
   transition: all 0.5s;
 }
 
-.home-sec4-head > p:hover::before {
+.home-sec4-head p:hover::before {
   top: 0px;
   left: 0px;
   right: 0px;
@@ -579,18 +590,22 @@
   .home-sec4-head {
     background-size: 1250px;
   }
-  .home-sec4-head p {
-    margin-right: auto;
-  }
 }
 
 @media only screen and (max-width: 1000px) {
   .home-sec4-head {
     background-image: none;
     background-color: rgb(247, 54, 54);
-    display: inline-block;
-    text-align: center;
     height: 210px;
+  }
+
+  .home-sec4-head > div {
+    grid-template-columns: auto;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    right: 0;
   }
 
   .home-sec4-head h1 {
@@ -608,7 +623,7 @@
   column-gap: 80px;
   position: absolute;
   justify-content: center;
-  top: 210px;
+  top: 180px;
   left: 0;
   right: 0;
 
@@ -842,6 +857,7 @@
   width: 350px;
   height: 430px;
   margin: 20px;
+  cursor: pointer;
 }
 
 .home-sec5-coacheImage {
@@ -849,7 +865,6 @@
   height: 65%;
   overflow: hidden;
   background-image: url('../../../public/pictures/BG1.png');
-  cursor: pointer;
 }
 
 .home-sec5-coacheImage img {
@@ -965,7 +980,7 @@
   color: rgb(181, 176, 176);
 }
 
-.home-sec6-body-mainInfo > div {
+.home-sec6-body-mainInfo-arrow {
   left: auto;
   right: 15px;
   top: 270px;
@@ -975,14 +990,15 @@
   text-align: center;
 }
 
-.home-sec6-body-mainInfo > div > div {
+.home-sec6-body-mainInfo-arrow > div {
   background-color: white;
   width: 50px;
   padding: 12px 0;
   transition: all 0.4s;
+  cursor: pointer;
 }
 
-.home-sec6-body-mainInfo > div > div:hover {
+.home-sec6-body-mainInfo-arrow > div:hover {
   background-color: red;
   color: white;
 }
@@ -1111,10 +1127,11 @@
 /* =========================================================================================================== */
 
 .home-sec8 {
-  background-image: url('../../../public/pictures/Pic2.jpg');
+  /* background-image: url('../../../public/pictures/Pic2.jpg');
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
+  background-position: right;
+  background-size: 500px 150%; */
+  background-color: black;
   margin-top: 120px;
   height: 400px;
 }
@@ -1164,6 +1181,8 @@
   height: 45px;
   background-color: rgb(77, 75, 75);
   margin-top: -14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .btn-calculate:hover {
@@ -1187,7 +1206,7 @@
   padding-top: 100px;
   width: 100%;
   height: 1000px;
-  background-image: url('../../../public/backgroundPic/sec2-backgrnd.jpg');
+  background-image: url('../../../public/backgroundPic/BG1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
