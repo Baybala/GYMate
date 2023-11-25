@@ -5,6 +5,7 @@ import {
   faPhone,
   faEnvelope,
 } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const SideChart = ({ sideChartOn, sideChartClick }) => {
   return (
@@ -17,15 +18,7 @@ const SideChart = ({ sideChartOn, sideChartClick }) => {
     >
       <div>
         <div className="sideChart-head">
-          <div className="sideChart-logo">
-            <div className="sideChart-logo-image">
-              <img src="./gymateLogo.png" alt="logo" />
-            </div>
-            <div className="sideChart-logo-logo">
-              <h2 style={{ margin: 0 }}>GYMATE</h2>
-              <h6 style={{ margin: 0 }}>ULTIMATE GYM CENTER</h6>
-            </div>
-          </div>
+          <Link className="sideChart-logo" to="/Home"></Link>
           <div className="sideChart-closeButton" onClick={sideChartClick}>
             <FontAwesomeIcon icon={faRectangleXmark} />
           </div>

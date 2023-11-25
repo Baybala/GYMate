@@ -1,21 +1,19 @@
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import './About.css'
 
 const About = () => {
-  const scrollRef = useRef()
-
   useEffect(() => {
-    scrollRef.current?.scrollTo({
-      y: 0,
-      animated: true,
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
     })
   })
 
   return (
-    <div className="about" id="about" ref={scrollRef}>
+    <div className="about" id="about">
       <div className="about-container">
         <h1 className="aboutUS">
           <b>About Us</b>
@@ -35,7 +33,7 @@ const About = () => {
               you to create a personalized fitness and nutrition plan that helps
               you reach your specific goals.
             </p>
-            <Link state={{ textDecoraion: 'none' }}>
+            <Link to="/Classes" state={{ textDecoraion: 'none' }}>
               <p className="about-button">
                 <b>
                   TAKE A TOUR

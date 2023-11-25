@@ -1,8 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Gallery.css'
 import { Pagination } from '@mui/material'
 
 const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  })
+
   const gridElement = () => {
     return [
       { picture: './pictures/Picture1.jpeg' },
@@ -44,6 +51,7 @@ const Gallery = () => {
             <div
               className="item"
               style={{ backgroundImage: `url(${item.picture})` }}
+              key={item.picture}
             ></div>
           ))}
         </div>

@@ -7,8 +7,16 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
 import './Blog.css'
+import { Link } from 'react-router-dom'
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  })
+
   const blogs = (picURL, headText, someText) => {
     return (
       <>
@@ -24,15 +32,17 @@ const Blog = () => {
           <b>{headText}</b>
         </h1>
         <p style={{ fontSize: '16px' }}>{someText}</p>
-        <button className="purchaseButton">
-          <b>
-            PURCHASE NOW
-            <FontAwesomeIcon
-              style={{ paddingLeft: '8px' }}
-              icon={faArrowRightLong}
-            />
-          </b>
-        </button>
+        <Link to="/SignIn">
+          <button className="purchaseButton">
+            <b>
+              PURCHASE NOW
+              <FontAwesomeIcon
+                style={{ paddingLeft: '8px' }}
+                icon={faArrowRightLong}
+              />
+            </b>
+          </button>
+        </Link>
       </>
     )
   }

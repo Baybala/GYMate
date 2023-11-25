@@ -4,6 +4,7 @@ import {
   faChartBar,
   faBars,
 } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const SignInUP = ({ sideChartClick, menuBarClick }) => {
   return (
@@ -14,22 +15,26 @@ const SignInUP = ({ sideChartClick, menuBarClick }) => {
             <FontAwesomeIcon icon={faBars} />
           </p>
         </div>
-        <div className="header-signUp-button">
-          <p>
-            <FontAwesomeIcon icon={faUserPlus} />
-          </p>
-        </div>
+        <Link to="/SignInUP">
+          <div className="header-signUp-button">
+            <p>
+              <FontAwesomeIcon icon={faUserPlus} />
+            </p>
+          </div>
+        </Link>
         <div className="header-chartBar-button">
           <p onClick={sideChartClick}>
             <FontAwesomeIcon icon={faChartBar} />
           </p>
         </div>
-        <div className="header-joinClassNow-button">
-          <div>
-            <b>+</b>
+        <Link to="/Classes">
+          <div className="header-joinClassNow-button">
+            <div>
+              <b>+</b>
+            </div>
+            <p>JOIN CLASS NOW</p>
           </div>
-          <p>JOIN CLASS NOW</p>
-        </div>
+        </Link>
       </div>
     </div>
   )

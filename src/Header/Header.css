@@ -22,17 +22,13 @@
 }
 
 .header-logo {
-  position: relative;
-  height: 80%;
-  width: 220px;
+  height: 60%;
+  width: 180px;
   cursor: pointer;
-}
-
-.header-logo div {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 5px;
+  background-image: url('../../public/logoWhite.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .header-section-logo h1,
@@ -109,6 +105,10 @@
   width: 310px;
 }
 
+.header-authorization a {
+  color: white;
+}
+
 .header-authorization p {
   font-size: 23px;
   margin: 0;
@@ -147,12 +147,12 @@
 .header-joinClassNow-button div {
   background-color: red;
   border-radius: 3px;
-  line-height: 1.5;
-  vertical-align: middle;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   font-size: 25px;
   margin: 3px;
   width: 40px;
-  text-align: center;
   transition: all 0.5s;
 }
 
@@ -247,54 +247,34 @@
   }
 }
 
-.sideChart-head,
-.sideChart-logo {
+.sideChart-head {
+  position: relative;
+  height: 100px;
   display: flex;
   flex-direction: row;
 }
 
-.sideChart-head {
-  height: 100px;
-}
-
 .sideChart-logo {
-  width: 80%;
-}
-
-.sideChart-logo-image,
-.sideChart-logo-logo {
-  position: relative;
-  width: 60px;
-  transform: translateY(-50%);
-  top: 50%;
-  color: black;
-}
-
-.sideChart-logo-image {
-  width: 60px;
+  position: absolute;
+  top: 20px;
+  width: 180px;
   height: 50px;
-}
-
-.sideChart-logo-image img {
-  width: 60px;
-  height: auto;
-}
-
-.sideChart-logo-logo {
-  height: 40px;
-  width: 150px;
+  cursor: pointer;
+  background-image: url('../../public/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 
 .sideChart-closeButton {
+  position: absolute;
+  top: 25px;
+  right: 0;
   color: red;
-  width: 100%;
+  width: auto;
   font-size: 30px;
-  text-align: right;
   height: 30px;
-  position: relative;
   cursor: pointer;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .sideChart-aboutUs,
@@ -304,7 +284,8 @@
   margin-top: 60px;
 }
 
-.sideChart-aboutUs p {
+.sideChart-aboutUs > p {
+  color: gray;
   font-size: 17px;
 }
 

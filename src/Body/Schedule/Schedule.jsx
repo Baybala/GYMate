@@ -1,7 +1,14 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './Schedule.css'
 
 const Schedule = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  })
+
   const buttonName = [
     'Monday',
     'Tuesday',
@@ -120,7 +127,7 @@ const Schedule = () => {
           ))}
         </div>
         {dataToDisplay.map((item) => (
-          <div className="item-container">
+          <div className="item-container" key={item.class}>
             <div className="class">
               <h5>Class Name</h5>
               <p>

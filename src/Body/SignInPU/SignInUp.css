@@ -1,0 +1,58 @@
+.singInUP {
+  width: 100%;
+  height: auto;
+  padding: 70px 0;
+  background-image: url('../../../public/backgroundPic/BG1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signInUp-container {
+  width: 450px;
+  height: 600px;
+  margin: 0px auto;
+  padding: 0 50px;
+  background-color: black;
+}
+
+.singInUp-form {
+  /* margin: 0 50px; */
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.singInUp-form label {
+  margin-top: 20px;
+}
+
+.singInUp-form input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  font-size: 17px;
+  padding: 10px;
+  margin: 10px auto;
+  border: none;
+}
+
+.singInUp-form input:focus {
+  box-sizing: border-box;
+  border: 3px solid red;
+}
+
+.signInUpButton {
+  margin-top: 40px;
+  font-size: 17px;
+  background-color: red;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.signInUp-container h4,
+.signInUp-container h6 {
+  color: rgba(255, 255, 255, 0.8);
+}

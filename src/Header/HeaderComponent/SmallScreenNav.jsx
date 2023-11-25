@@ -11,7 +11,7 @@ const SmallScreenNav = ({ navPath, menuBarClick }) => {
       <nav className="smallScreen-nav">
         {navPath.map((item) => {
           return (
-            <p key={item}>
+            <p key={item} onClick={menuBarClick}>
               <Link to={item}>{item}</Link>
             </p>
           )

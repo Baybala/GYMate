@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faUser,
@@ -6,9 +6,16 @@ import {
   faArrowRightLong,
 } from '@fortawesome/free-solid-svg-icons'
 import './Classes.css'
-import { Link } from 'react-router-dom'
+import { Link, useOutletContext } from 'react-router-dom'
 
 const Classes = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  })
+
   const galleryData = [
     {
       picURL: './pictures/cycling.jpg',
@@ -98,11 +105,13 @@ const Classes = () => {
     }
   }
 
-  console.log(numberOfItemsToShow)
-
   const galleryItem = (picURL, header, trainer, time) => {
     return (
-      <div className="classItem" style={{ backgroundImage: `url(${picURL})` }}>
+      <div
+        className="classItem"
+        style={{ backgroundImage: `url(${picURL})` }}
+        key={picURL}
+      >
         <div>
           <h2>
             <b>{header}</b>

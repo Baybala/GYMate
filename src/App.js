@@ -11,6 +11,7 @@ import Pricing from './Body/Pricing/Pricing'
 import Classes from './Body/Classes/Classes'
 import Contact from './Body/Contact/Contact'
 import BodyheaderLayout from './Body/BodyHeaderLayout'
+import SignInUP from './Body/SignInPU/SignInUp'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Body />} />
         <Route path="/" element={<BodyheaderLayout />}>
+          <Route path="signInUP" element={<SignInUP />} />
           <Route path="about" element={<About />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="schedule" element={<Schedule />} />

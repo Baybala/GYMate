@@ -1,5 +1,119 @@
 .contact {
+  position: relative;
   width: 100%;
   height: auto;
-  background-color: brown;
+}
+
+.contact > h1 {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.contact-container {
+  max-width: var(--sec-width);
+  height: auto;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-container {
+    grid-template-columns: 60%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-container {
+    grid-template-columns: 80%;
+  }
+}
+
+.contact-container p {
+  color: gray;
+}
+
+.generalInfo {
+  display: grid;
+  align-items: center;
+  height: auto;
+}
+
+.generalInfo > h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.submitForm {
+  background-color: bisque;
+  height: 100%;
+}
+
+.contactData {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .contactData {
+    grid-template-columns: 80%;
+  }
+}
+
+.contactHeader {
+  margin: 40px 0;
+  position: relative;
+}
+
+.contactHeader::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 50px;
+  height: 5px;
+  background-color: red;
+}
+
+.submitForm {
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.116);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.form > input,
+.form > select,
+.form > textarea {
+  padding: 14px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.form > textarea {
+  resize: vertical;
+  height: 200px;
+}
+
+.submmitTheComment {
+  width: 180px;
+  height: 50px;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  margin: 30px 0;
 }

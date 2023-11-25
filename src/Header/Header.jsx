@@ -1,10 +1,10 @@
-import './Header.css'
 import HeaderLogo from './HeaderComponent/HeaderLogo'
 import { useState, useEffect } from 'react'
 import Nav from './HeaderComponent/Nav'
-import SignInUP from './HeaderComponent/SignInUp'
+import SignInUP from './HeaderComponent/SignInUpArea'
 import SideChart from './HeaderComponent/SideChart'
 import SmallScreenNav from './HeaderComponent/SmallScreenNav'
+import './Header.css'
 
 const Header = () => {
   const navPath = [
